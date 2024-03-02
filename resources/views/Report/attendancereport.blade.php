@@ -85,8 +85,16 @@
 </head>
 
 <body>
-    @extends('layouts.master')
+    
+    {{-- @if ($user_role === 'admin')
+        @extends('layouts.inc.admin_dashboard')
+    @else
+        @extends('layouts.master')
+    @endif --}}
+    {{-- @extends('layouts.master') --}}
+    @extends('layouts.inc.admin_dashboard')
     @section('content')
+    
     <div class="container">
 
         <div class="report-title">

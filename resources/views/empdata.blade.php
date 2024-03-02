@@ -42,7 +42,8 @@
 </head>
 
 <body>
-    @extends('layouts.master')
+    {{-- @extends('layouts.master') --}}
+    @extends('layouts.inc.admin_dashboard')
     @section('content')
         <div class="container mt-5">
             <div class="row justify-content-center">

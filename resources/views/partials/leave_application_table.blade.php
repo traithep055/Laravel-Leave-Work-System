@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .btn{
+            margin-top: 12px
+        }
+    </style>
 </head>
 <body>
     <div class="card shadow mb-4"> <!-- ใส่ card และ shadow สำหรับ Bootstrap -->

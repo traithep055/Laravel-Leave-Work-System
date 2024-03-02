@@ -64,7 +64,8 @@
     </style>
 </head>
 <body>
-    @extends('layouts.master')
+    {{-- @extends('layouts.master') --}}
+    @extends('layouts.inc.admin_dashboard')
     @section('content')
     @if(session('fail'))
         <div class="alert alert-danger">

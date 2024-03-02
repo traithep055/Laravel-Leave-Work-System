@@ -42,14 +42,15 @@
     </style>
 </head>
 <body>
-@extends('layouts.master')
+{{-- @extends('layouts.master') --}}
+@extends('layouts.inc.admin_dashboard')
 @section('content')
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header custom-header">
-                    <h1 class="mb-0">Update Profile</h1>
+                    <h1 class="mb-0" style="color: #f7f7f7">Update Profile</h1>
                 </div>
 
                 <div class="card-body">

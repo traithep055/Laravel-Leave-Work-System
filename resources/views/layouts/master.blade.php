@@ -11,7 +11,11 @@
 
 </head>
 <body>
-    @include('layouts.inc.AdminHomeNav')
+    {{-- @if ($user_role === 'admin')
+        @include('layouts.inc.admin_dashboard')
+    @else --}}
+        @include('layouts.inc.AdminHomeNav')
+    {{-- @endif --}}
     @yield('content')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

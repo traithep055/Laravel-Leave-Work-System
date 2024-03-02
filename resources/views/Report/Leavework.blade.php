@@ -42,7 +42,9 @@
 </head>
 
 <body>
-    @extends('layouts.master')
+        @extends('layouts.inc.admin_dashboard')
+        {{-- @extends('layouts.master') --}}
+    
     @section('content')
     <div class="container">
         <div class="report-title">

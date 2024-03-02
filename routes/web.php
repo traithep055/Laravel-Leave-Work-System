@@ -129,5 +129,8 @@ Route::middleware(['check.role'])->group(function () {
     // Route::get('/fetch-data', [CausecheckController::class, '']);
 });
 
+Route::get('/about', function () {
+    return view('layouts.inc.admin_dashboard');
+});
 
 

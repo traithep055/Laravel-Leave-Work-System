@@ -16,14 +16,15 @@
         }
 
         .container {
-            background-color: #f2f2f2;
+            background-color: #aea1a1;
             border-radius: 5px;
             padding: 20px;
         }
 
         .chart-container {
             width: 30%;
-            margin: 0 auto;
+            /* margin: 0 auto; */
+            margin-top: 50px;
         }
 
         #myChart {
@@ -39,7 +40,8 @@
 </head>
 
 <body>
-    @extends('layouts.master')
+    {{-- @extends('layouts.master') --}}
+    @extends('layouts.inc.admin_dashboard')
     @section('content')
 
     <div class="container">
@@ -75,7 +77,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 
         <div class="container mt-4">
             <!-- Row for Header -->
@@ -87,7 +89,7 @@
             <div class="d-flex">
                 <div class="columns">
                     <!-- User Card -->
-                    <div class="col-md-12 mb-12">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="card-body  bg-warning">
                                 <div class="d-flex justify-content-start align-items-center">
@@ -105,7 +107,7 @@
                     </div>
                     <br>
                     <!-- Employee Card -->
-                    <div class="col-md-12 mb-12">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="card-body bg-warning">
                                 <div class="d-flex justify-content-start align-items-center">
@@ -123,7 +125,7 @@
                     </div>
                     <br>
                     <!-- Job Details Card -->
-                    <div class="col-md-12 mb-12">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="card-body bg-warning">
                                 <div class="d-flex justify-content-start align-items-center">
@@ -141,14 +143,14 @@
                     </div>
                     <br>
                 </div>
-                <div class="chart-container">
+                <div class="chart-container col-12 mt-4">
                     <canvas id="myChart" width="200" height="200"></canvas>
                 </div>
             </div>
         </div> <!-- End Container -->
 
 
-        <div class="container mt-5">
+        <div class="container mt-2">
             <div class="row">
                 <h2>ข้อมูลการลา</h2>
 
@@ -247,8 +249,7 @@
                 }
             });
         </script>
-
-
+    </div>
     @endsection
 </body>
 
